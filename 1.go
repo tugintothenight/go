@@ -1,18 +1,16 @@
 package main
-
 import "fmt"
 
 type Me struct {
-	Name string
-	Age  int
+	name string
+	age int
 }
 
-func (p Me) Infor() {
-	fmt.Printf("tên %s tuổi %d\n", p.Name, p.Age)
+func (m Me) Infor {
+	fmt.Printf("My name is %s, I'm %d years old", m.name, m.age)
 }
 
 func main() {
-
-	me := Me{Name: "Tung", Age: 20}
-	person.Infor()
+	me := Me{"Tung", 20}
+	me.Infor()
 }
