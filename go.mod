@@ -1,2 +1,3 @@
-module 1
-go 1.12
+module exp
+
+go 1.23.4
