@@ -4,6 +4,7 @@ import (
 	"exp/encapsulation"
 	"exp/inheritance"
 	abstrpoly "exp/polymorphism+abstraction"
+	"fmt"
 )
 
 func main() {
@@ -19,4 +20,5 @@ func main() {
 	// kế thừa
 	Dell := inheritance.NewLaptop("Tung", 20, "Dell")
 	Dell.I()
+	fmt.Println(Dell.Person.Name)
 }
