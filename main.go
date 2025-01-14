@@ -11,13 +11,12 @@ func main() {
 	me := encapsulation.NewPerson("Tung", 20)
 	me.Grow()
 	me.I()
-	// đa hình
+	// đa hình + trừu tượng
 	human := abstrpoly.Person{}
 	dell := abstrpoly.Laptop{}
 	human.Identity()
 	dell.Identity()
 	// kế thừa
-	apple := inheritance.NewLaptop("Tung", 20, "Dell")
-	apple.I()
-	// Trừu tượng
+	Dell := inheritance.NewLaptop("Tung", 20, "Dell")
+	Dell.I()
 }
